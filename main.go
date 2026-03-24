@@ -58,6 +58,7 @@
 
 // 	// var y string = "100"
 // 	// fmt.Println(y)
+// var x String is a new variable
 // }
 
 
