@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"sync"
 )
 
 func health(w http.ResponseWriter, req *http.Request){
@@ -34,3 +35,5 @@ func main() {
 		fmt.Println("Server failed to start:", err)
 	}
 }
+
+
