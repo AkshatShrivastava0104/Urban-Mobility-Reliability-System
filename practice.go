@@ -1,4 +1,4 @@
-// package main
+package dj
 
 // import "fmt"
 
@@ -8,7 +8,6 @@
 // 	Price float32
 // }
 
-
 // // var c Car
 
 // // var c Car = Car{
@@ -16,8 +15,6 @@
 // // 	Name: "BMW",
 // // 	Price: 30000.50,
 // // }
-
-
 
 // // fmt.Println(d.ID)
 
@@ -35,19 +32,15 @@
 // 	}
 // 	fmt.Println(x)
 
-
-
 // 	d := Car{
 // 		ID: 1,
 // 		Name: "BMW",
 // 		Price: 30000.50,
 // 	}
 
-
 // 	fmt.Println(d.ID)
 
 // 	d.Name = "Audi"
-
 
 // 	fmt.Println(d.Name)
 
@@ -55,12 +48,7 @@
 
 // 	fmt.Println(d.Price)
 
-
 // 	// var y string = "100"
 // 	// fmt.Println(y)
 // var x String is a new variable
 // }
-
-
-
-
