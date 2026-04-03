@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"sync"
 
 	"github.com/gorilla/mux"
 )
@@ -22,6 +23,15 @@ func main() {
 	SetupVehicleRoutes(router)
 	SetupRideRoutes(router)
 	SetupLocationRoutes(router)
+
+	var wg sync.WaitGroup
+
+	increment := func(name string, n int) {
+		for range n {
+			MemoryStore(name)
+		}
+
+	}
 
 	fmt.Println("Starting Server on port 8080...")
 	err := http.ListenAndServe(":8080", router)
